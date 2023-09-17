@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts as videos",
+  "description": "Watch YouTube Shorts as normal videos.",
+  "version": "1.0.0",
+  "author": "Aaron Keesing",
+  "homepage_url": "https://github.com/agkphysics/yt-shorts-as-videos",
+  "permissions": ["webNavigation"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "yt-shorts-as-videos@agkphysics.github.io"
+    }
+  }
+}
