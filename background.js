@@ -11,7 +11,7 @@ function redirectShorts(nav) {
 
 const shortsFilter = { url: [{ hostContains: ".youtube.com", pathPrefix: "/shorts" }] };
 
-browser.runtime.onInstalled.addListener(() => {
+browser.runtime.onStartup.addListener(() => {
     browser.webNavigation.onHistoryStateUpdated.addListener(redirectShorts, shortsFilter);
     browser.webNavigation.onBeforeNavigate.addListener(redirectShorts, shortsFilter);
     console.log("Added listeners for webNavigation.");
